@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-edit-profile',
@@ -14,7 +15,13 @@ export class EditProfileComponent {
   };
   previewUrl: string | ArrayBuffer | null = null;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private titleService: Title) {
+    this.updateTitle('Engagement Portal | Edit Profile');
+  }
+
+  updateTitle(newTitle: string) {
+    this.titleService.setTitle(newTitle);
+  }
 
   onSubmit(): void {
     console.log('Updated User:', this.user);
