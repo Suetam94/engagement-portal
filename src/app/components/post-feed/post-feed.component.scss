@@ -1,0 +1,15 @@
+.post-feed {
+  @apply space-y-4;
+
+  .post-item {
+    @apply bg-white rounded-lg shadow-md p-4 border border-gray-200;
+  }
+
+  .post-header {
+    @apply flex justify-between items-center mb-2;
+  }
+
+  .post-content {
+    @apply text-gray-800;
+  }
+}

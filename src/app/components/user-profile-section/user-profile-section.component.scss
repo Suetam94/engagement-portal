@@ -1,0 +1,23 @@
+.user-profile {
+  @apply bg-white rounded-lg shadow-md p-4;
+
+  img {
+    @apply h-16 w-16 rounded-full border-2 border-blue-600;
+  }
+
+  h2 {
+    @apply text-lg font-bold;
+  }
+
+  p {
+    @apply text-sm text-gray-500;
+  }
+
+  a {
+    @apply block hover:underline;
+  }
+
+  a[href*='Logout'] {
+    @apply text-red-600;
+  }
+}

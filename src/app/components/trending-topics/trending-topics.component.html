@@ -1,0 +1,11 @@
+<div class="trending-topics bg-white rounded-lg shadow-md p-4">
+  <h2 class="text-lg font-bold mb-4">Trending Topics</h2>
+  <ul class="space-y-3">
+    <li
+      *ngFor="let topic of topics"
+      class="flex justify-between items-center text-gray-700">
+      <a href="#" class="hover:underline">{{ topic.name }}</a>
+      <span class="text-sm text-gray-500">{{ topic.count }} posts</span>
+    </li>
+  </ul>
+</div>

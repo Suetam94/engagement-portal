@@ -1,0 +1,19 @@
+.quick-post-form {
+  @apply bg-white rounded-lg shadow-md p-4;
+
+  textarea {
+    @apply w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300;
+  }
+
+  button {
+    @apply px-4 py-2 rounded-md;
+  }
+
+  button[type='submit'] {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+
+  button[type='button'] {
+    @apply text-sm text-gray-500 hover:underline;
+  }
+}

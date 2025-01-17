@@ -1,0 +1,23 @@
+<div class="user-profile bg-white rounded-lg shadow-md p-4">
+  <div class="flex items-center space-x-4">
+    <img
+      src="assets/profile.png"
+      alt="User Profile"
+      class="h-16 w-16 rounded-full border-2 border-blue-600" />
+    <div>
+      <h2 class="text-lg font-bold">{{ user.name }}</h2>
+      <p class="text-sm text-gray-500">{{ user.email }}</p>
+    </div>
+  </div>
+  <ul class="mt-4 space-y-2">
+    <li>
+      <a href="#" class="block text-blue-600 hover:underline">View Profile</a>
+    </li>
+    <li>
+      <a href="#" class="block text-blue-600 hover:underline">Settings</a>
+    </li>
+    <li>
+      <a href="#" class="block text-red-600 hover:underline">Logout</a>
+    </li>
+  </ul>
+</div>
