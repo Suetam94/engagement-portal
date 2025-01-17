@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { QuickPostFormComponent } from './components/quick-post-form/quick-post-form.component';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostFeedComponent } from './components/post-feed/post-feed.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TrendingTopicsComponent } from './components/trending-topics/trending-topics.component';
@@ -33,15 +33,10 @@ import { DeleteAccountModalComponent } from './components/delete-account-modal/d
     LoginComponent,
     ProfileComponent,
     EditProfileComponent,
-    DeleteAccountModalComponent
+    DeleteAccountModalComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

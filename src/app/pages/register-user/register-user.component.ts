@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {Title} from "@angular/platform-browser";
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register-user',
@@ -11,7 +11,10 @@ export class RegisterUserComponent implements OnInit {
   registerForm!: FormGroup;
   submitted = false;
 
-  constructor(private titleService: Title, private fb: FormBuilder) {
+  constructor(
+    private titleService: Title,
+    private fb: FormBuilder,
+  ) {
     this.updateTitle('Engagement Portal | Register User');
   }
 

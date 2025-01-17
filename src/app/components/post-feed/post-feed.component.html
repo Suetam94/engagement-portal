@@ -2,7 +2,8 @@
   <h2 class="text-lg font-bold mb-4">Recent Posts</h2>
   <div
     *ngFor="let post of posts"
-    class="post-item bg-white rounded-lg shadow-md p-4 border border-gray-200">
+    class="post-item bg-white rounded-lg shadow-md p-4 border border-gray-200"
+  >
     <div class="post-header flex justify-between items-center mb-2">
       <h3 class="text-md font-semibold">{{ post.author }}</h3>
       <span class="text-sm text-gray-500">{{ post.timestamp | date: 'short' }}</span>

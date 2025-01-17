@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-quick-post-form',
   templateUrl: './quick-post-form.component.html',
-  styleUrls: ['./quick-post-form.component.scss']
+  styleUrls: ['./quick-post-form.component.scss'],
 })
 export class QuickPostFormComponent {
   postContent = '';

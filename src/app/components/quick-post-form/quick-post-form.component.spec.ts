@@ -8,7 +8,7 @@ describe('QuickPostFormComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [QuickPostFormComponent]
+      declarations: [QuickPostFormComponent],
     });
     fixture = TestBed.createComponent(QuickPostFormComponent);
     component = fixture.componentInstance;
