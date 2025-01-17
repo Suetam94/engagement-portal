@@ -1,0 +1,19 @@
+header {
+  @apply bg-blue-600 text-white shadow-md;
+
+  .nav-link {
+    @apply hover:underline text-lg;
+  }
+
+  input[type='text'] {
+    @apply px-4 py-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-300;
+  }
+
+  .dropdown-menu {
+    @apply absolute right-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg;
+  }
+
+  .group:hover .dropdown-menu {
+    @apply block;
+  }
+}
