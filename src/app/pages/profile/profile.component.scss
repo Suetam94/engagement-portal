@@ -1,0 +1,23 @@
+.profile-page {
+  @apply bg-white rounded-lg shadow-md p-6 max-w-lg mx-auto;
+
+  img {
+    @apply h-16 w-16 rounded-full border-2 border-blue-600;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg font-bold;
+  }
+
+  p {
+    @apply text-sm text-gray-500;
+  }
+
+  button {
+    @apply w-full py-2 rounded-md;
+  }
+}
