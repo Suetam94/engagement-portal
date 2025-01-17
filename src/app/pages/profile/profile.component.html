@@ -1,0 +1,34 @@
+<div class="profile-page bg-white rounded-lg shadow-md p-6 max-w-lg mx-auto mt-16">
+  <h2 class="text-xl font-bold mb-4">My Profile</h2>
+  <div class="flex items-center space-x-4 mb-6">
+    <img
+      src="{{ user.profilePicture }}"
+      alt="User Profile"
+      class="h-16 w-16 rounded-full border-2 border-blue-600" />
+    <div>
+      <h3 class="text-lg font-bold">{{ user.name }}</h3>
+      <p class="text-sm text-gray-500">{{ user.email }}</p>
+    </div>
+  </div>
+  <ul class="space-y-4">
+    <li>
+      <button
+        class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+        routerLink="/profile/edit">
+        Edit Profile
+      </button>
+    </li>
+    <li>
+      <button
+        class="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700"
+        (click)="openModal()">
+        Delete Account
+      </button>
+    </li>
+  </ul>
+  <app-delete-account-modal
+    *ngIf="showDeleteModal"
+    (confirmAction)="handleDeleteAccount()"
+    (cancelAction)="closeModal()">
+  </app-delete-account-modal>
+</div>
