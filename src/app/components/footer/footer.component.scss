@@ -1,0 +1,15 @@
+.footer {
+  @apply bg-gray-800 text-white py-4 px-6;
+
+  a {
+    @apply hover:underline;
+  }
+
+  ul {
+    @apply flex space-x-6;
+  }
+
+  p {
+    @apply text-sm;
+  }
+}

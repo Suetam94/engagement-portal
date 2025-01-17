@@ -1,2 +1,14 @@
 <app-header></app-header>
+<div class="flex h-screen">
+  <app-sidebar class="w-1/6 hidden md:block"></app-sidebar>
+  <main class="flex-1 flex flex-col p-4 space-y-12">
+    <app-quick-post-form></app-quick-post-form>
+    <app-post-feed></app-post-feed>
+  </main>
+  <aside class="w-1/4 hidden lg:flex flex-col gap-5 p-4 ">
+    <app-trending-topics></app-trending-topics>
+    <app-user-profile-section></app-user-profile-section>
+  </aside>
+</div>
+<app-footer></app-footer>
 <router-outlet></router-outlet>

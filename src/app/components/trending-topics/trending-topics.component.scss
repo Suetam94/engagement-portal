@@ -1,0 +1,19 @@
+.trending-topics {
+  @apply bg-white rounded-lg shadow-md p-4;
+
+  ul {
+    @apply space-y-3;
+  }
+
+  li {
+    @apply flex justify-between items-center text-gray-700;
+  }
+
+  a {
+    @apply hover:underline;
+  }
+
+  span {
+    @apply text-sm text-gray-500;
+  }
+}
