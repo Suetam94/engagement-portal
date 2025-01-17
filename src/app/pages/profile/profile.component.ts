@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-profile',
@@ -12,6 +13,14 @@ export class ProfileComponent {
     profilePicture: 'assets/profile.png',
   };
   showDeleteModal = false;
+
+  constructor(private titleService: Title) {
+    this.updateTitle('Engagement Portal | Profile');
+  }
+
+  updateTitle(newTitle: string) {
+    this.titleService.setTitle(newTitle);
+  }
 
   openModal(): void {
     this.showDeleteModal = true;
