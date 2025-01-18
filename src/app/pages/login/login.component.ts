@@ -1,7 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +15,10 @@ export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
   submitted = false;
 
-  constructor(private titleService: Title, private fb: FormBuilder) {
+  constructor(
+    private titleService: Title,
+    private fb: FormBuilder,
+  ) {
     this.updateTitle('Engagement Portal | Login');
   }
 

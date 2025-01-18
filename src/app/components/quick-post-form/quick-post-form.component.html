@@ -7,20 +7,16 @@
       name="postContent"
       class="w-full h-32 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 resize-none"
       placeholder="What’s on your mind?"
-      required>
+      required
+    >
     </textarea>
 
     <!-- Action Buttons -->
     <div class="flex justify-between items-center mt-4">
-      <button
-        type="button"
-        class="text-sm text-gray-500 hover:underline"
-        (click)="clearPost()">
+      <button type="button" class="text-sm text-gray-500 hover:underline" (click)="clearPost()">
         Clear
       </button>
-      <button
-        type="submit"
-        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+      <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
         Post
       </button>
     </div>

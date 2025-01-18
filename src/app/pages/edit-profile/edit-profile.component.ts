@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-profile',
@@ -13,7 +13,11 @@ export class EditProfileComponent implements OnInit {
   submitted = false;
   previewUrl: string | ArrayBuffer | null = null;
 
-  constructor(private router: Router, private titleService: Title, private fb: FormBuilder) {
+  constructor(
+    private router: Router,
+    private titleService: Title,
+    private fb: FormBuilder,
+  ) {
     this.updateTitle('Engagement Portal | Edit Profile');
   }
 
@@ -50,7 +54,7 @@ export class EditProfileComponent implements OnInit {
   }
 
   cancelEdit(): void {
-   void this.router.navigate(['/profile']);
+    void this.router.navigate(['/profile']);
   }
 
   onFileSelected(event: Event): void {
